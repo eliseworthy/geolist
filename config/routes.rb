@@ -1,4 +1,7 @@
 Geolist::Application.routes.draw do
+  
+  match '/locations'        => 'locations#index'
+  match '/locations/:title' => 'locations#show'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
